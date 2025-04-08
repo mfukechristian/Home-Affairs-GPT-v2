@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
   color: var(--head-text);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 a {

@@ -22,11 +22,7 @@ const ResultDisplay: React.FC<ResultDisplayProps> = ({ result, onGoBack }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.logoContainer}>
-        {/* You can add the logo here if you want it on the result page */}
-        {/* <Image src={southAfricaLogo} alt="South Africa Coat of Arms" width={100} height={100} /> */}
-      </div>
-      <h2 className={styles.title}>Result</h2>
+      <h2 className={styles.title}>See the Result To your Request below</h2>
       <div className={styles.markdownContainer}>
         <ReactMarkdown>{result}</ReactMarkdown>
       </div>

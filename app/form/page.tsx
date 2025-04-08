@@ -15,8 +15,8 @@ const FormPage: React.FC = () => {
   const [result, setResult] = useState<string | null>(null);
   const router = useRouter();
 
-  const mainServices = ["Civis", "Immigration"];
-  const civisSubServices = [
+  const mainServices = ["Civic Services", "Immigration Services"];
+  const civicSubServices = [
     "Birth Certificate",
     "Death Certificate",
     "Marriage Certificate",
@@ -32,10 +32,10 @@ const FormPage: React.FC = () => {
   ];
 
   useEffect(() => {
-    if (service === "Civis") {
-      setSubServiceOptions(civisSubServices);
+    if (service === "Civic Services") {
+      setSubServiceOptions(civicSubServices);
       setSubService("");
-    } else if (service === "Immigration") {
+    } else if (service === "Immigration Services") {
       setSubServiceOptions(immigrationSubServices);
       setSubService("");
     } else {

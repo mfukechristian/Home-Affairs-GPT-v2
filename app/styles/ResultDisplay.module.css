@@ -3,43 +3,31 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  max-width: 800px; /* Adjust as needed */
+  width: 100%;
   margin: 2rem auto;
-  background-color: var(--background);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.logoContainer {
-  margin-bottom: 1.5rem;
 }
 
 .title {
   color: var(--head-text);
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .markdownContainer {
   width: 100%;
-  padding: 1rem;
   margin-bottom: 1.5rem;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  background-color: #f9f9f9;
-  text-align: left;
-  white-space: pre-wrap; /* Preserve whitespace and line breaks */
-  font-family: sans-serif; /* Adjust font as needed */
+  opacity: 0.85;
 }
 
 .backButton {
   background-color: #006732;
   color: white;
-  padding: 1rem 2rem;
+  width: 100%;
+  height: 50px;
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }

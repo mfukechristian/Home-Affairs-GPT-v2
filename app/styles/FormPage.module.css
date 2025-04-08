@@ -3,15 +3,12 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  max-width: 600px;
+  max-width: 500px;
   margin: 2rem auto;
-  background-color: var(--background);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logoContainer {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .formTitle {
@@ -34,9 +31,10 @@
 }
 
 .formGroup label {
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 0.5rem;
   color: var(--text);
+  opacity: 0.85;
 }
 
 .selectInput,

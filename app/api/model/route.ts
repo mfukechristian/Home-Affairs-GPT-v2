@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
     
       ${allContent}
     
-      Please rephrase the information above in a clear, concise, and easy-to-understand manner for a user seeking information. Organize the information logically using Markdown formatting, including headings, bullet points, and emphasis where appropriate to highlight key details. Ensure the language is accessible to someone who may not be familiar with technical or legal jargon. Focus on providing practical and actionable information.
+      Please rephrase the information above in a clear, concise, and easy-to-understand manner for a user seeking information.  Ensure the language is accessible to someone who may not be familiar with technical or legal jargon. Focus on providing practical and actionable information.only one to two paragraph maximum
       `
     );
 
