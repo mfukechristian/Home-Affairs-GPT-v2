@@ -1,0 +1,132 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  margin-bottom: 1.5rem;
+}
+
+.formTitle {
+  color: var(--head-text);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.selectInput,
+.textareaInput {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.selectInput:focus,
+.textareaInput:focus {
+  outline: none;
+  border-color: var(--head-text);
+  box-shadow: 0 0 0 0.2rem rgba(0, 103, 50, 0.25); /* Slightly transparent head-text color */
+}
+
+.textareaInput {
+  min-height: 100px;
+}
+
+.submitButton {
+  background-color: #006732;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #004d24;
+}
+
+.submitButton:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.resultContainer {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.resultContainer h3 {
+  color: var(--head-text);
+  margin-bottom: 0.5rem;
+}
+
+.markdownResult {
+  white-space: pre-wrap; /* Preserve whitespace and line breaks */
+  font-family: monospace; /* Optional: Use a monospace font for code-like presentation */
+}
+
+/* Existing styles */
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey border */
+  border-top: 4px solid #006732; /* Green border on top for the animation */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite; /* Apply the spin animation */
+  margin-bottom: 1rem;
+}
+
+.loadingText {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

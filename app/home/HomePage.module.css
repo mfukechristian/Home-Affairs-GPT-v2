@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logoContainer {
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  color: var(--text);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: var(--head-text);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.submitButton {
+  background-color: #006732;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #004d24;
+}

@@ -2,7 +2,14 @@ import { NextResponse, NextRequest } from "next/server";
 import dotenv from "dotenv";
 dotenv.config();
 import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
+import { ChatMistralAI } from "@langchain/mistralai";
 import { z } from "zod";
+
+const llm = new ChatMistralAI({
+  apiKey: process.env.MISTRAL_API_KEY_1,
+  model: "mistral-large-latest",
+  temperature: 0,
+});
 
 const webSearchContentTool = new TavilySearchResults({
   maxResults: 5,
@@ -42,9 +49,18 @@ export async function POST(request: NextRequest) {
     }[];
     const allContent = parsedData.map((result) => result.content).join("\n\n");
 
+    const result = await llm.invoke(
+      `You are a highly knowledgeable South African expert in civic and immigration services. Based on the following research context:
+    
+      ${allContent}
+    
+      Please rephrase the information above in a clear, concise, and easy-to-understand manner for a user seeking information. Organize the information logically using Markdown formatting, including headings, bullet points, and emphasis where appropriate to highlight key details. Ensure the language is accessible to someone who may not be familiar with technical or legal jargon. Focus on providing practical and actionable information.
+      `
+    );
+
     return NextResponse.json({
       message: "Web search completed successfully!",
-      data: allContent,
+      data: result.content,
     });
   } catch (error: any) {
     console.error("Error processing request:", error);
