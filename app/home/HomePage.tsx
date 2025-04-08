@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import styles from "./HomePage.module.css"; // Import as a CSS Module
+import styles from "../styles/HomePage.module.css";
 import Image from "next/image";
 import southAfricaLogo from "../../public/logo.png";
 

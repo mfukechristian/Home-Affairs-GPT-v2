@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
   --background: #ffffff;
   --text: #171717;
@@ -13,7 +15,10 @@ body {
 body {
   color: var(--text);
   background: var(--background);
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 * {
@@ -29,6 +34,7 @@ h4,
 h5,
 h6 {
   color: var(--head-text);
+  font-weight: 700;
 }
 
 a {

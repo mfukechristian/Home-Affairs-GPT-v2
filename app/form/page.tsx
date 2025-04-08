@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useEffect, useCallback } from "react"; // Import useCallback
-import styles from "./FormPage.module.css";
+import React, { useState, useEffect, useCallback } from "react";
+import styles from "../styles/FormPage.module.css";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import southAfricaLogo from "../../public/logo.png";
