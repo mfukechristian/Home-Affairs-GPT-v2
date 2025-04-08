@@ -96,9 +96,9 @@ const FormPage: React.FC = () => {
           height={100}
         />
       </div>
-      <h2 className={styles.formTitle}>Complete the form below</h2>
       {!isLoading && !result && (
         <form onSubmit={handleSubmit} className={styles.form}>
+          <h2 className={styles.formTitle}>Complete the form below</h2>
           <div className={styles.formGroup}>
             <label htmlFor="service">Select a service</label>
             <select
