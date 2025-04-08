@@ -3,8 +3,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
-import southAfricaLogo from "../../public/logo.png";
 import styles from "../styles/ResultDisplay.module.css";
 
 interface ResultDisplayProps {

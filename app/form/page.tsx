@@ -13,7 +13,6 @@ const FormPage: React.FC = () => {
   const [subServiceOptions, setSubServiceOptions] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState<string | null>(null);
-  const router = useRouter();
 
   const mainServices = ["Civic Services", "Immigration Services"];
   const civicSubServices = [

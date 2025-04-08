@@ -62,10 +62,16 @@ export async function POST(request: NextRequest) {
       message: "Web search completed successfully!",
       data: result.content,
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Error processing request:", error);
+    let details: string;
+    if (error instanceof Error) {
+      details = error.message;
+    } else {
+      details = "An unknown error occurred";
+    }
     return NextResponse.json(
-      { error: "Failed to process request", details: error.message },
+      { error: "Failed to process request", details: details },
       { status: 500 }
     );
   }
