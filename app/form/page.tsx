@@ -64,7 +64,7 @@ const FormPage: React.FC = () => {
           console.error("Error processing request:", response.status);
           setResult("Error processing your request. Please try again.");
         }
-      } catch (error: any) {
+      } catch (error: unknown) {
         console.error("Fetch error:", error);
         setResult("Failed to send request. Please check your network.");
       } finally {
